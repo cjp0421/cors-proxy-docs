@@ -28,7 +28,7 @@ enableMissingTranslationPlaceholders = false
 
     # Theme / menu behavior
     menu_style = "open-menu"
-    menu_exclusion = []
+    menu_exclusion = ["sample"]
 
     # Algolia site search (disabled)
     algolia_search_enable = false
