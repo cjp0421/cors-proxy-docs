@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313/"
 languageCode = "en-us"
-title = "Solving CORS with a Go Lambda Proxy: Documentation for Frontend Engineers"
+title = "Solving CORS with a Go Lambda Proxy"
 theme = "hugo-theme-techdoc"
 
 metaDataFormat = "yaml"
@@ -9,7 +9,7 @@ defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
 
 [params]
-    description = "Step-by-step guide for frontend developers to solve CORS using a Go-based AWS Lambda proxy."
+    description = "Documentation for Frontend Engineers"
     github_repository = "https://github.com/cjp0421/cors-proxy-docs"
     version = "0.1.0"
 
