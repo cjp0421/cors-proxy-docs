@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+
+# Node
+node_modules/
+
+# Editors
+.vscode/
+.idea/
+
+# HUGO
+/public/
+/resources/_gen/
+*.diff
+.hugo_build.lock
