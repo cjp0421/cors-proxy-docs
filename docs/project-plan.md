@@ -1,8 +1,8 @@
 # User Story
 
-**As a** frontend developer who is blocked by CORS when calling a public API,  
-**I want** a clear, step-by-step guide for creating a simple Go-based AWS Lambda proxy using click-ops,  
-**so that** I can successfully route API requests through my own server, keep my upstream API key secure, and continue building my application without backend complexity.
+*As a* frontend developer who is blocked by CORS when calling a public API,  
+*I want* a clear, step-by-step guide for creating a simple Go-based AWS Lambda proxy using click-ops,  
+*so that* I can successfully route API requests through my own server, keep my upstream API key secure, and continue building my application without backend complexity.
 
 ---
 
