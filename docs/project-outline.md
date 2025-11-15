@@ -17,19 +17,19 @@
 
 ---
 
-## 3. Architecture Overview
-- High-level request flow description  
-- Role of the Lambda function  
-- Role of API Gateway  
-- Why secrets should live in Lambda (not frontend code)  
-
----
-
-## 4. Before You Begin (Prerequisites)
+## 3. Before You Begin (Prerequisites)
 - AWS account  
 - Basic Go setup  
 - Basic knowledge of making API calls  
 - Frontend setup context (e.g., Vite, React)  
+
+---
+
+## 4. Architecture Overview
+- High-level request flow description  
+- Role of the Lambda function  
+- Role of API Gateway  
+- Why secrets should live in Lambda (not frontend code) 
 
 ---
 
