@@ -33,16 +33,7 @@
 
 ---
 
-## 5. Create the Lambda (Click-Ops)
-- Navigate to AWS Lambda in the console  
-- Create function (Go runtime)  
-- Add environment variables (API key)  
-- Set basic permissions  
-- Save and deploy  
-
----
-
-## 6. Go Handler Overview
+## 5. Go Handler Overview
 - What the handler needs to do conceptually:  
   - Receive event  
   - Call upstream API  
@@ -50,6 +41,15 @@
   - Format response  
   - Add CORS headers  
   - Return JSON  
+
+---
+
+## 6. Create the Lambda (Click-Ops)
+- Navigate to AWS Lambda in the console  
+- Create function (Go runtime)  
+- Add environment variables (API key)  
+- Set basic permissions  
+- Save and deploy  
 
 ---
 
