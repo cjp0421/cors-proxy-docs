@@ -17,31 +17,25 @@ This guide uses a simple, lightweight architecture designed for frontend develop
 #### Request Flow
 
 **1. Frontend → API Gateway**  
-**Label:** `fetch request to your proxy`  
 Your frontend calls the API Gateway URL instead of the upstream API.
 
 **2. API Gateway → Lambda**  
-**Label:** `invoke Lambda`  
 API Gateway forwards the request exactly as-is to your Lambda function.
 
 **3. Lambda → Public API**  
-**Label:** `upstream API request (includes your API key)`  
 Lambda reads your private API key from an environment variable and sends the request to the upstream API.
 
 ---
 
 #### Response Flow
 
-**4. Public API → Lambda**  
-**Label:** `JSON response`  
+**4. Public API → Lambda**   
 The upstream API returns the raw data to Lambda.
 
-**5. Lambda → API Gateway**  
-**Label:** `return JSON + CORS headers`  
+**5. Lambda → API Gateway**    
 Lambda formats the response and adds the CORS headers your browser needs.
 
-**6. API Gateway → Frontend**  
-**Label:** `CORS-safe response`  
+**6. API Gateway → Frontend**   
 The browser receives normal JSON without CORS errors.
 
 {{% /panel %}}
