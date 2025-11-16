@@ -34,11 +34,85 @@ enableMissingTranslationPlaceholders = false
     algolia_search_enable = false
 
 [menu]
-    [[menu.main]]
-        name = "Home"
-        url = "/"
-        weight = 1
-        identifier = 'home'
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+    identifier = "home"
+
+  [[menu.main]]
+    name = "Overview"
+    url = "/overview/"
+    weight = 2
+    identifier = "overview"
+
+  [[menu.main]]
+    name = "CORS"
+    url = "/cors/"
+    weight = 3
+    identifier = "cors"
+
+  [[menu.main]]
+    name = "Prerequisites"
+    url = "/prerequisites/"
+    weight = 4
+    identifier = "prerequisites"
+
+  [[menu.main]]
+    name = "Architecture"
+    url = "/architecture/"
+    weight = 5
+    identifier = "architecture"
+
+  [[menu.main]]
+    name = "Handler"
+    url = "/handler/"
+    weight = 6
+    identifier = "handler"
+
+  [[menu.main]]
+    name = "Lambda"
+    url = "/lambda/"
+    weight = 7
+    identifier = "lambda"
+
+  [[menu.main]]
+    name = "API Gateway"
+    url = "/api-gateway/"
+    weight = 8
+    identifier = "api-gateway"
+
+  [[menu.main]]
+    name = "Testing"
+    url = "/testing/"
+    weight = 9
+    identifier = "testing"
+
+  [[menu.main]]
+    name = "Security"
+    url = "/security/"
+    weight = 10
+    identifier = "security"
+
+  [[menu.main]]
+    name = "Frontend"
+    url = "/frontend/"
+    weight = 11
+    identifier = "frontend"
+
+  [[menu.main]]
+    name = "Project Structure"
+    url = "/project-structure/"
+    weight = 12
+    identifier = "project-structure"
+
+  [[menu.main]]
+    name = "Appendix"
+    url = "/appendix/"
+    weight = 13
+    identifier = "appendix"
+
 
 [markup]
     defaultMarkdownHandler = "goldmark"
