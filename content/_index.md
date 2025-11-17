@@ -38,7 +38,6 @@ This guide walks through a simple solution: creating a small, secure serverless 
 
 ---
 
-
 ### What You Will Learn
 - Why CORS errors occur  
 - How to create and deploy a Go Lambda using the AWS Console  
