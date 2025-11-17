@@ -34,6 +34,8 @@ You will:
 
 - Upload the generated function.zip deployment package
 
+- Configure environment variables
+
 - Test the handler directly in the Lambda console using a minimal event payload
 
 {{% panel %}}
