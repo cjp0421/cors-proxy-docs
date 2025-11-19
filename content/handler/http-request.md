@@ -21,7 +21,8 @@ if err != nil {
 }
 defer resp.Body.Close()
 {{% /code %}}
-👉 To see how this fits in to the whole handler, visit **[Minimal Example](/appendix/minimal-example/)**.
+
+👉 To see how this fits in to the whole handler, visit **[Minimal Example]({{< relref "appendix/minimal-example" >}})**.
 
 This does exactly what we need:
 

@@ -10,7 +10,7 @@ This guide uses a simple, lightweight architecture designed for frontend develop
 
 ### 🧠 Simple Mental Model
 
-![Architecture Overview](/images/architecture-overview.png)
+![Architecture Overview]({{ "/images/architecture-overview.png" | relURL }})
 
 ---
 

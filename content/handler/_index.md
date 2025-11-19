@@ -5,7 +5,7 @@ weight = 4
 
 The handler is the core of this entire proxy pattern. It’s the one piece of Go code that actually runs inside AWS Lambda and performs the work your frontend can’t do on its own. In this pattern, the handler is the “bridge” between your browser request and the upstream API.
 
-👉 If you want the fastest path, start with **[Project Structure](/handler/project-structure/)** (to set up your project files), then jump to **[Minimal Example](/appendix/minimal-example/)** (a complete, working handler you can copy and paste).
+👉 If you want the fastest path, start with **[Project Structure]({{< relref "project-structure" >}})** (to set up your project files), then jump to **[Minimal Example]({{< relref "appendix/minimal-example" >}})** (a complete, working handler you can copy and paste).
 
 🧠 If you want to go deeper, explore the **line-by-line breakdown** in the individual pages:
 

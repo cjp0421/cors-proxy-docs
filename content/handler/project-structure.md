@@ -69,7 +69,7 @@ You will paste the Minimal Example handler into this file later.
 touch build.sh
 chmod +x build.sh
 ```
-👉 Click to see the **[Build Script](/appendix/build-script/)**.
+👉 Click to see the **[Build Script]({{< relref "appendix/build-script" >}})**.
 
 #### 5. Add the AWS Lambda dependency
 ```sh

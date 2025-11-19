@@ -19,7 +19,8 @@ if err != nil {
     return serverError(fmt.Errorf("failed to read upstream response: %w", err))
 }
 {{% / code %}}
-👉 To see how this fits in to the whole handler, visit **[Minimal Example](/appendix/minimal-example/)**.
+
+👉 To see how this fits in to the whole handler, visit **[Minimal Example]({{< relref "appendix/minimal-example" >}})**.
 
 This does exactly what we need:
 
