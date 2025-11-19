@@ -27,7 +27,7 @@ Go makes this simple using `os.Getenv`:
 apiKey := os.Getenv("API_KEY")
 baseURL := os.Getenv("BASE_URL")
 {{% /code %}}
-👉 To see how this fits in to the whole handler, visit **[Minimal Example](/appendix/minimal-example/)**.
+👉 To see how this fits in to the whole handler, visit **[Minimal Example]({{< relref "appendix/minimal-example" >}})**.
 
 If either value is missing, your handler should fail early and return a clear JSON error. 
 
