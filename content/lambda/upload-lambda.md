@@ -6,17 +6,17 @@ weight = 3
 Next, upload the ZIP file you built earlier.
 
 1. On your Lambda function page, open the **Code** tab  
-![Code Tab]({{ "/images/code-tab.png" | relURL }})
+![Code Tab](/cors-proxy-docs/images/code-tab.png)
 
 2. Click **Upload from → .zip file**
 <div class="medium-image">
 
-![Upload Zip]({{ "/images/upload-zip.png" | relURL }})
+![Upload Zip](/cors-proxy-docs/images/upload-zip.png)
 
 </div>
 
 3. Select **function.zip**  
-![Select Zip File]({{ "/images/select-zip-file.png" | relURL }})
+![Select Zip File](/cors-proxy-docs/images/select-zip-file.png)
 
 4. Click **Save**
 

@@ -21,7 +21,7 @@ weight = 6
 
 <div class="lambda-img">
 
-![AWS Lambda]({{ "/images/lambda.png" | relURL }})
+![AWS Lambda](/cors-proxy-docs/images/lambda.png)
 
 </div>
 

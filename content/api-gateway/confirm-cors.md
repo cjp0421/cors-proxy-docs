@@ -23,7 +23,7 @@ For this tutorial, the safest setup is:
 
 ## Step 3 – Confirm CORS Is Disabled in API Gateway
 
-![Configure CORS]({{ "/images/select-cors-to-configure.png" | relURL }})
+![Configure CORS](/cors-proxy-docs/images/select-cors-to-configure.png)
 
 In your HTTP API:
 

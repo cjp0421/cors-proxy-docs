@@ -9,10 +9,10 @@ This makes testing very easy.
 To test:
 
 1. Go to the **Test** tab  
-![Test Tab]({{ "/images/test-tab.png" | relURL }})
+![Test Tab](/cors-proxy-docs/images/test-tab.png)
 
 2. Click **Configure test event**  
-![Configure Test Event]({{ "/images/create-test-event.png" | relURL }})
+![Configure Test Event](/cors-proxy-docs/images/create-test-event.png)
 
 3. Use this minimal JSON:
 
@@ -23,7 +23,7 @@ To test:
 4. Save and click **Test**
 
 You should see a green success banner. Click on the triangle to see:  
-![Success Message]({{ "/images/execute-success-show-headers.png" | relURL }})
+![Success Message](/cors-proxy-docs/images/execute-success-show-headers.png)
 
 - StatusCode: `200`
 - CORS headers added (i.e. "Access-Control-Allow-Origin": "*")
