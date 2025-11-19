@@ -6,22 +6,22 @@ weight = 8
 ## Returning the Final Response to the Browser
 
 Once the upstream API call succeeds and you’ve read the response body, the handler’s final job is returning a proper HTTP response back to the browser.  
-AWS Lambda requires a specific structure: `APIGatewayProxyResponse`.
+AWS Lambda requires a specific structure: `APIGatewayV2HTTPResponse` (for HTTP API payload v2).
 
 ---
 
-### Using `APIGatewayProxyResponse`
+### Using `APIGatewayV2HTTPResponse`
 
 Here’s the pattern from the minimal example:
 
 {{% code file="example/main_example.go" codeLang="go" %}}
-return events.APIGatewayProxyResponse{
+return events.APIGatewayV2HTTPResponse{
     StatusCode: resp.StatusCode,
     Body:       string(bodyBytes),
     Headers:    corsHeaders(),
 }, nil
 {{% / code %}}
-👉 To see how this fits in to the whole handler, visit **[Minimal Example](/appendix/minimal-example/)**.
+👉 To see how this fits into the whole handler, visit **[Minimal Example](/appendix/minimal-example/)**.
 
 This does three important things:
 
@@ -46,13 +46,15 @@ Your minimal example uses:
 {{% code file="example/main_example.go" codeLang="go" %}}
 func corsHeaders() map[string]string {
     return map[string]string{
-        "Content-Type":                "application/json",
-        "Access-Control-Allow-Origin": "*",
+        "Content-Type":                 "application/json",
+        "Access-Control-Allow-Origin":  "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type",
     }
 }
 {{% / code %}}
 
-👉 To see how this fits in to the whole handler, visit **[Minimal Example](/appendix/minimal-example/)**.
+👉 To see how this fits into the whole handler, visit **[Minimal Example](/appendix/minimal-example/)**.
 
 ---
 
