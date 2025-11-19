@@ -4,10 +4,13 @@ weight = 3
 +++
 
 Your Lambda handler is a normal Go function with a very specific signature.  
-API Gateway sends your frontend request into this function, and Lambda expects a structured response in return.
+API Gateway (using HTTP API payload **v2**) sends your frontend request into this function, and Lambda expects a structured response in return.
 
 {{% code file="example/main_example.go" codeLang="go" %}}
-func Handler(ctx context.Context, event events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
+func Handler(
+    ctx context.Context,
+    event events.APIGatewayV2HTTPRequest,
+) (events.APIGatewayV2HTTPResponse, error) {
     // logic here
 }
 {{% / code %}}
@@ -19,14 +22,14 @@ func Handler(ctx context.Context, event events.APIGatewayProxyRequest) (events.A
 #### `ctx context.Context`  
 Provided by Lambda. Mostly used for timeouts or cancellation, but required even if you don’t use it.
 
-#### `event events.APIGatewayProxyRequest`  
-Represents the incoming HTTP request after API Gateway formats it.  
+#### `event events.APIGatewayV2HTTPRequest`  
+Represents the incoming HTTP request after API Gateway formats it (using the v2 HTTP API format).  
 Common fields you’ll use:
 
 - `QueryStringParameters`
 - `Headers`
 - `Body`
-- `Path`
+- `RawPath` / `PathParameters` (if you enable them)
 
 This is the data you use to build the upstream API request.
 
@@ -35,10 +38,10 @@ This is the data you use to build the upstream API request.
 Your handler must return:
 
 {{% code file="example/main_example.go" codeLang="go" %}}
-(events.APIGatewayProxyResponse, error)
+(events.APIGatewayV2HTTPResponse, error)
 {{% /code %}}
 
-#### `APIGatewayProxyResponse`  
+#### `APIGatewayV2HTTPResponse`  
 This becomes the HTTP response back to the browser.  
 You’ll set:
 
@@ -53,4 +56,4 @@ Most of the time, you’ll handle errors yourself and return JSON so the browser
 ### Why This Matters
 
 This signature is the contract between your Go code and AWS.  
-As long as you follow it exactly, Lambda knows how to pass requests in and send responses back out with proper CORS.
+Using the correct **v2 request/response types** ensures that HTTP API passes your CORS headers straight through to the browser, and your handler behaves like any standard server endpoint.
