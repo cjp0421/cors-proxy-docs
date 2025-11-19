@@ -11,11 +11,11 @@ These are **optional**, but useful if you want to explore beyond the minimal set
 
 ## What You’ll Find Here
 
-### **1. [Build Script](/appendix/build-script) (Optional)**
+### **1. [Build Script]({{< relref "build-script" >}}) (Optional)**
 A simple `build.sh` you can use to compile your Go handler for ARM64 and produce a ZIP file ready for Lambda upload.  
 This is *not* required if you prefer building manually—it just automates the steps.
 
-### **2. [Minimal Example](/appendix/minimal-example) (Code)**
+### **2. [Minimal Example]({{< relref "minimal-example" >}}) (Code)**
 A fully self-contained, minimal version of the Lambda handler.  
 This mirrors what the guide walks through, with nothing extra added.
 
@@ -35,6 +35,3 @@ If you want to go a bit deeper, the handler’s GitHub repository includes:
 - A **parameterized version** that forwards query params safely  
 - **Unit tests** showing how the handler behaves under success/error conditions  
 - A clear folder structure for exploring alternative patterns
-
-
-
