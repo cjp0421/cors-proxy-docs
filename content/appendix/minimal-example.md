@@ -5,8 +5,6 @@ title = "Minimal Example (Code)"
 {{% code file="example/main_example.go" codeLang="go" %}}
 package main
 
-package main
-
 import (
 	"context"
 	"fmt"
@@ -18,7 +16,7 @@ import (
 	"github.com/aws/aws-lambda-go/lambda"
 )
 
-func handler(ctx context.Context, req events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
+func handler(ctx context.Context, req events.APIGatewayV2HTTPRequest) (events.APIGatewayV2HTTPResponse, error) {
 	apiKey := os.Getenv("API_KEY")
 	baseURL := os.Getenv("BASE_URL")
 
@@ -42,23 +40,23 @@ func handler(ctx context.Context, req events.APIGatewayProxyRequest) (events.API
 		return serverError(fmt.Errorf("failed to read upstream response: %w", err))
 	}
 
-	return events.APIGatewayProxyResponse{
+	return events.APIGatewayV2HTTPResponse{
 		StatusCode: resp.StatusCode,
 		Body:       string(bodyBytes),
 		Headers:    corsHeaders(),
 	}, nil
 }
 
-func clientError(msg string) (events.APIGatewayProxyResponse, error) {
-	return events.APIGatewayProxyResponse{
+func clientError(msg string) (events.APIGatewayV2HTTPResponse, error) {
+	return events.APIGatewayV2HTTPResponse{
 		StatusCode: 400,
 		Body:       fmt.Sprintf(`{"error": "%s"}`, msg),
 		Headers:    corsHeaders(),
 	}, nil
 }
 
-func serverError(err error) (events.APIGatewayProxyResponse, error) {
-	return events.APIGatewayProxyResponse{
+func serverError(err error) (events.APIGatewayV2HTTPResponse, error) {
+	return events.APIGatewayV2HTTPResponse{
 		StatusCode: 500,
 		Body:       fmt.Sprintf(`{"error": "%s"}`, err.Error()),
 		Headers:    corsHeaders(),
@@ -67,13 +65,14 @@ func serverError(err error) (events.APIGatewayProxyResponse, error) {
 
 func corsHeaders() map[string]string {
 	return map[string]string{
-		"Content-Type":                "application/json",
-		"Access-Control-Allow-Origin": "*",
+		"Content-Type":                 "application/json",
+		"Access-Control-Allow-Origin":  "*",
+		"Access-Control-Allow-Methods": "GET,OPTIONS",
+		"Access-Control-Allow-Headers": "Content-Type",
 	}
 }
 
 func main() {
 	lambda.Start(handler)
 }
-
 {{% /code %}}

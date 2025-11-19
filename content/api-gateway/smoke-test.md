@@ -26,6 +26,15 @@ A correct result will show:
 - A JSON body that clearly comes **from your Lambda**, not API Gateway  
   - (For example: `{"message": "ok"}` or `{"error": "missing required query parameter 'id'"}` depending on your handler logic.)
 
+It may look like:
+
+{{% code file="" codeLang="http" %}}
+HTTP/2 200
+content-type: application/json
+
+{"message":"ok"}
+{{% /code %}}
+
 ### What you’re validating here
 
 - API Gateway route exists  

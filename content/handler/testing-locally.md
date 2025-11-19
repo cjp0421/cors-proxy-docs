@@ -25,7 +25,7 @@ go build ./...
 {{% / code %}}
 
 You should see **no errors**.  
-This verifies that your imports, function signature, and Go structure are correct.
+This verifies that your imports, the v2 handler signature, and general Go structure are correct.
 
 You can also run your build script:
 

@@ -25,7 +25,7 @@ curl -i "https://abc123.execute-api.us-east-1.amazonaws.com/prod/proxy"
 ### What You Should See
 
 {{% code file="" codeLang="http" %}}
-HTTP/1.1 200 OK
+HTTP/2 200
 Content-Type: application/json
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: GET,OPTIONS
