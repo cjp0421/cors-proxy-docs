@@ -21,7 +21,8 @@ return events.APIGatewayV2HTTPResponse{
     Headers:    corsHeaders(),
 }, nil
 {{% / code %}}
-👉 To see how this fits into the whole handler, visit **[Minimal Example](/appendix/minimal-example/)**.
+
+👉 To see how this fits into the whole handler, visit **[Minimal Example]({{< relref "appendix/minimal-example" >}})**.
 
 This does three important things:
 
@@ -54,7 +55,7 @@ func corsHeaders() map[string]string {
 }
 {{% / code %}}
 
-👉 To see how this fits into the whole handler, visit **[Minimal Example](/appendix/minimal-example/)**.
+👉 To see how this fits into the whole handler, visit **[Minimal Example]({{< relref "appendix/minimal-example" >}})**.
 
 ---
 

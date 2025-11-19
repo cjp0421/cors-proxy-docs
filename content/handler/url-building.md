@@ -24,7 +24,8 @@ baseURL := os.Getenv("BASE_URL")
 
 upstreamURL := fmt.Sprintf("%s/data?apikey=%s", baseURL, apiKey)
 {{% /code %}}
-👉 To see how this fits in to the whole handler, visit **[Minimal Example](/appendix/minimal-example/)**.
+
+👉 To see how this fits in to the whole handler, visit **[Minimal Example]({{< relref "appendix/minimal-example" >}})**.
 
 Here’s what’s happening:
 

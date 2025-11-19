@@ -21,11 +21,13 @@ weight = 6
 
 <div class="lambda-img">
 
-![AWS Lambda](/images/lambda.png)
+![AWS Lambda]({{ "/images/lambda.png" | relURL }})
+
 </div>
 
 This section walks you through deploying a minimal Go handler to AWS Lambda using your existing build.sh script. This example does not read query parameters, headers, or request bodies—it always returns the same JSON response. The goal here is to learn the Lambda workflow in its simplest form before adding more advanced logic later.
 </div>
+
 You will:
 
 - Build the handler locally using build.sh
