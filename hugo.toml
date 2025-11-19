@@ -125,3 +125,7 @@ enableMissingTranslationPlaceholders = false
 
 [outputs]
     home = ["HTML", "RSS"]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
