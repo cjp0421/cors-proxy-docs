@@ -5,8 +5,8 @@ weight = 5
 Before testing the full proxy behavior, first make sure **API Gateway can successfully invoke your Lambda**.
 
 - In your HTTP API, open **Stages** (under **Deploy**) and select your stage (e.g., `prod`).
-  - It will look like: *https://abc123.execute-api.us-east-1.amazonaws.com/prod*
-    ![Invoke URL](/images/invoke-url.png)
+  - It will look like: *https://abc123.execute-api.us-east-1.amazonaws.com/prod*  
+    ![Invoke URL]({{ "/images/invoke-url.png" | relURL }})
 
 - Now test that API Gateway can reach your Lambda by calling your route directly (usually `/proxy`):
 

@@ -9,21 +9,21 @@ Your routes and CORS settings are not live until you deploy them to a stage.
 
 <div class="dropdown-image">
 
-![Stages](/images/stages.png)
+![Stages]({{ "/images/stages.png" | relURL }})
 
 </div>
 
 2. Click **Create**.  
-![Create Stage](/images/create-stage.png)
+![Create Stage]({{ "/images/create-stage.png" | relURL }})
 
 3. In **Stage Details**  
    - In **Stage name**, enter: `prod`
-   - **Description** is optional
-![Name Stage](/images/name-stage.png)
+   - **Description** is optional  
+![Name Stage]({{ "/images/name-stage.png" | relURL }})
 
 4. In **Stage Deployment**, toggle on *Enable automatic deployment*. 
-   - This ensures the API auto-deploys every time you update routes or CORS.
-   ![Enable Auto Deploy](/images/enable-auto-deploy.png)
+   - This ensures the API auto-deploys every time you update routes or CORS.  
+   ![Enable Auto Deploy]({{ "/images/enable-auto-deploy.png" | relURL }})
 
 6. Click **Create**.
 

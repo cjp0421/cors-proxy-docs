@@ -20,7 +20,7 @@ weight = 7
 
 <div class="lambda-img">
 
-![AWS Lambda](/images/api-gateway.png)
+![AWS Lambda]({{ "/images/api-gateway.png" | relURL }})
 </div>
 
 With your Lambda handler built and tested, the next step is to expose it through API Gateway so your frontend can call it from the browser. We will use the simplest possible setup: a single HTTP API, one route that points to your Lambda, and basic CORS settings so the browser is allowed to make the request.
