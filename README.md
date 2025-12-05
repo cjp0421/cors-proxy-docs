@@ -1,4 +1,4 @@
-# Go + AWS Lambda CORS Proxy — Documentation Site (Personal Project)
+# Go + AWS Lambda CORS Proxy — Documentation Site
 
 ![Hugo](https://img.shields.io/badge/Hugo-Docs-blueviolet)
 ![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-orange)
